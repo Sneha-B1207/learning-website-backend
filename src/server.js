@@ -9,10 +9,7 @@ dotenv.config();
 
 const app = express();
 const port = process.env.PORT || 3000;
-app.use(cors({ 
-  origin: 'https://learningwebsiteui.vercel.app',  // or your frontend URL
-  credentials: true
-}));
+app.use(cors()); 
 
 // Middleware
 app.use(express.json());
